@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import _ from 'lodash'
 import { Navigate } from 'react-router-dom'
-
+import Title from './Title'
 import { getAllSounds } from './panWads'
 
 export default class LearningSounds extends Component {
@@ -60,7 +60,7 @@ export default class LearningSounds extends Component {
 		return(
 			<div>
 			{this.state.finished ? <Navigate to={this.props.nextPage} /> : null}
-			<h1>Learn the Sounds</h1>
+			<Title title="Learning Sounds"></Title>
 			<select onChange={this.handleChange}>
 				{this.options}
 			</select>

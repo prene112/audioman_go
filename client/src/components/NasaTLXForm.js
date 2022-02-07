@@ -13,6 +13,7 @@ import "bootstrap-slider/dist/css/bootstrap-slider.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import Title from './Title';
 
 
 class NasaTLXForm extends Component {
@@ -48,6 +49,8 @@ class NasaTLXForm extends Component {
 
     render() {
         return (
+            <div>
+            <Title title="Nasa TLX Form"></Title>
             <form class="center" style={{marginLeft: "40%"}}>
                 {categories.map((item, index) => (
                     <div>
@@ -83,6 +86,7 @@ class NasaTLXForm extends Component {
                     }
                 </div>
             </form>
+            </div>
         )
     }
 }

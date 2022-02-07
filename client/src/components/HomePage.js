@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
 import Form from './Form';
+import Title from './Title';
+import '../App.css';
 import * as ROUTES from "../constants/routes";
 import demographics from '../constants/demographics';
 import $ from 'jquery';
@@ -46,12 +48,12 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-            <h1>Demographics</h1>
-                <div className='container' style={{marginLeft: "30%"}}>
+                <Title title = "Demographics"></Title>
+                <div className='container'>
                     <Form questions={demographics}/>
                     <br></br>
                 </div>
-                <div className="container" style={{marginLeft: "65%"}}>
+                <div className="container">
                     <NavLink exact activeClassName="active" to={this.props.nextPage} onClick={this.handleClick}>
                         <FontAwesomeIcon icon={faLongArrowAltRight} size="4x"/>
                         Next

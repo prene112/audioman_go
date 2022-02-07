@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Question   from './Question'
 import { getAllSounds, refreshSoundScape, checkNumSounds, stopSounds } from './panWads'
 import _ from 'lodash'
+import Title from './Title'
 
 /*
 props to pass in are:

@@ -5,6 +5,7 @@ import _ from 'lodash'
 import { Navigate } from 'react-router-dom'
 
 import SoundTrial from './soundTrial'
+import Title from './Title'
 
 export default class Training extends Component {
 	constructor(props){
@@ -41,7 +42,7 @@ export default class Training extends Component {
 		return(
 			<div>
 			{this.state.done ? <Navigate to={this.props.nextPage} /> : null}
-			<h1>Condition {this.props.trialNum}</h1>
+			<Title title = {"Condition " + this.props.trialNum}></Title>
 			<SoundTrial trialLength={this.state.trialLength} maxSounds={this.state.maxSounds} increment={this.state.increment} onPlay={this.startTrial} soundScape={this.state.soundScape} condition={this.state.condition} onComplete={this.handleComplete} allowReset={false} soundOptions={this.soundNames} />
 			</div>
 		)

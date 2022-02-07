@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import {
   HashRouter as Router,
   Routes,
@@ -60,7 +61,7 @@ class App extends React.Component {
     var i = 1;
     return (
       <Router basename='/'>
-        <div className="App">
+        <div className="App white">
           <Routes>
             <Route exact path={ROUTES.PAGE1} element={<Consent nextPage="/demographics" {...this.passedProps} handleConditionChange={this.handleConditionChange} />}/>
             <Route exact path={ROUTES.PAGE2} element={<HomePage nextPage="/training" idProp={this.state.id} handleDataChange={this.handleDataChange} {...this.passedProps} />}/>
@@ -74,15 +75,16 @@ class App extends React.Component {
             <Route exact path="/feedback" element={<Feedback nextPage="/finalPage" handleDataChange={this.handleDataChange} {...this.passedProps} />}/>
             <Route exact path="/finalPage" element={<FinalPage data={this.state.data} {...this.passedProps} />}/>
 
-{/*
+    {/*
             {Object.entries(nextPages).map(([key, value]) => {
               return (key === "/page11") || (key === "/page19") ?
                 <Route key={key} exact path={key} element={<NasaTLXForm idProp={this.state.id} nextPage={value} data={this.state.passages[i++]}/>} {...this.passedProps} /> 
                 :
                 <Route key={key} exact path={key} element={<SoundPage idProp={this.state.id} nextPage={value} data={this.state.passages[i++]}/>} {...this.passedProps} />
             })}
-*/}
+    */}
           </Routes>
+
         </div>
       </Router>
     );

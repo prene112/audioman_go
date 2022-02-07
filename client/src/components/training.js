@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import Question   from './Question'
 import { getAllSounds, refreshSoundScape, checkNumSounds, stopSounds } from './panWads'
 import _ from 'lodash'
-
+import Title from './Title'
 import SoundTrial from './soundTrial'
 
 const trainingPassage =         {
@@ -93,7 +93,7 @@ export default class Training extends Component {
 
 		return(
 			<div>
-			<h1>Training Trial</h1>
+			<Title title="Training Trial"></Title>
 			<h2>Configuration</h2>
 			<p>One set of trials will be using the panning condition, and the other will be using the monaural condition. You should practice with both.</p>
 			<Question handleChange={(e, value)=>this.setState({condition:value})} type="radio" label="Condition" choices={["monaural", "pan"]} />

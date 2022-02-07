@@ -1,1 +1,41 @@
+html {
+    height: 100vh;
+}
+  
+body {
+    height: 100vh;
+}
+
+div#root {
+    background-color: blue;
+    padding-left: 25vh;
+    padding-right: 25vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+div.App {
+    padding: 5vh 5vh 5vh 5vh;
+}
+
+.titleDiv {
+    background-color: #D3D3D3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.white {
+    background-color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
 

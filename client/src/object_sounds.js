@@ -8,7 +8,7 @@ import walking from './training_sounds/walking.mp3'
 
 // soundscape1 sound imports
 import baby from './soundscape1/baby.mp3'
-import bird from './soundscape1/bird.mp3'
+import bird from './soundscape1/Bird.mp3'
 import camera from './soundscape1/camera.mp3'
 import chicken from './soundscape1/chicken.mp3'
 import clock from './soundscape1/clock.mp3'
@@ -17,16 +17,16 @@ import dog from './soundscape1/dog.mp3'
 import dolphin from './soundscape1/dolphin.mp3'
 import fire from './soundscape1/fire.mp3'
 import fly from './soundscape1/fly.mp3'
-import horn from './soundscape1/horn.mp3'
+import horn from './soundscape1/Horn.mp3'
 import knife from './soundscape1/knife.mp3'
 import lion from './soundscape1/lion.mp3'
 import saw from './soundscape1/saw.mp3'
 import sprinkler from './soundscape1/sprinkler.mp3'
 import telephone  from './soundscape1/telephone .mp3'
 import truck from './soundscape1/truck.mp3'
-import watch from './soundscape1/watch.mp3'
+import watch from './soundscape1/Watch.mp3'
 import whistle from './soundscape1/whistle.mp3'
-import zipper from './soundscape1/zipper.mp3'
+import zipper from './soundscape1/Zipper.mp3'
 
 
 // soundscape2 sound imports
